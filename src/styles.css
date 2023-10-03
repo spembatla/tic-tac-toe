@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+.square {
+  background-color: #fff;
+  width: 75px;
+  height: 75px;
+  border: 1px solid #999;
+  float: left;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 75px;
+  margin-top: -1px;
+  margin-right: -1px;
+  padding: 0;
+  text-align: center;
+}
+
+.box {
+  display: grid;
+  justify-content: center;
+}
+
+.board-row:after{
+  clear: both;
+  display: table;
+  content: '';
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.reset-btn {
+  background-color:blue;
+  color: #fff;
+  margin: 30px;
+  font-size: 20px;
+  font-weight:600;
+  padding: 13px;
+  
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.form{
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.play{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+.submit{
+  background-color: blue;
+  padding: 10px;
+  align-content: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.error {
+  color: red;
+  font-size: 15px;
+}
